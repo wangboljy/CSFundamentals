@@ -23,7 +23,7 @@ struct TNode {
 template <typename T, class Compare>
 RandomHeap<T, Compare>::RandomHeap() {
 	this->root = NULL;
-	this->compare = std::greater<int>();
+	this->compare = Compare();
 }
 
 /**
