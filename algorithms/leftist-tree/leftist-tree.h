@@ -16,7 +16,7 @@ struct TNode;
 
 #include <functional>
 
-template <class T, class Compare = std::greater<int> >
+template <class T, class Compare = std::greater<T> >
 class LeftistTree {
 	public:
 		/**

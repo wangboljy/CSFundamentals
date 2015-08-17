@@ -2,6 +2,7 @@
 #define RANDOM_HEAP_HPP
 
 #include <cstddef>
+#include <cstdlib>
 
 template<typename T>
 struct TNode {
@@ -9,7 +10,7 @@ struct TNode {
 	struct TNode *left;
 	struct TNode *right;
 
-	TNode(T d): data(d), left(NULL), right(NULL) {}
+	TNode(const T &d): data(d), left(NULL), right(NULL) {}
 };
 
 

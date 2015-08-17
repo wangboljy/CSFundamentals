@@ -12,7 +12,7 @@ struct TNode {
 	struct TNode *left;
 	struct TNode *right;
 
-	TNode(T d):data(d), left(NULL), right(NULL), dist(0) {}
+	TNode(const T &d):data(d), left(NULL), right(NULL), dist(0) {}
 };
 
 
